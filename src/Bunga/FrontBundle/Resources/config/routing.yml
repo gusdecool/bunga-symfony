@@ -1,0 +1,3 @@
+bunga_front_home:
+    pattern:  /
+    defaults: { _controller: BungaFrontBundle:Default:index }

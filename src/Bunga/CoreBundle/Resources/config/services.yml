@@ -1,0 +1,7 @@
+parameters:
+#    bunga_core.example.class: Bunga\CoreBundle\Example
+
+services:
+#    bunga_core.example:
+#        class: %bunga_core.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
