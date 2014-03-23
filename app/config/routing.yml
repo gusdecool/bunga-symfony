@@ -4,5 +4,5 @@ bunga_front:
 
 bunga_core:
     resource: "@BungaCoreBundle/Resources/config/routing.yml"
-    prefix:   /core
+    prefix:   /admin
 
