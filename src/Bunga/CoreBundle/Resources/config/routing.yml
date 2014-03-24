@@ -2,7 +2,3 @@ bunga_core_home:
     pattern:  /
     defaults: { _controller: BungaCoreBundle:Default:index }
 
-bunga_core_sample:
-    resource: "@BungaCoreBundle/Controller/SampleController.php"
-    prefix: /sample
-    type: annotation

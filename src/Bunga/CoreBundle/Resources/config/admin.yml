@@ -1,0 +1,11 @@
+services:
+    sonata.admin.sample:
+        class: Bunga\CoreBundle\Admin\Sample
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Content", label: "Sample CRUD" }
+        arguments:
+            - ~
+            - Bunga\CoreBundle\Entity\Sample
+            - ~
+        calls:
+            - [ setTranslationDomain, [BungaCoreBundle]]

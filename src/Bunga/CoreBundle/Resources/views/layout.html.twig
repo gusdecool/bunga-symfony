@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>{{ title }}</title>
+	<title>
+		{% if title is defined %}
+			{{ title }}
+		{% else %}
+			Bunga Symfony
+		{% endif %}
+	</title>
 	<link rel="icon" type="image/png" href="{{ asset('favicon.png') }}"/>
 
 	{% stylesheets
 	'bundles/bungacore/css/main.css' filter='cssrewrite' %}
-	<link rel="stylesheet" href="{{ asset_url }}" />
+	<link rel="stylesheet" href="{{ asset_url }}"/>
 	{% endstylesheets %}
 
 	<!--[if lt IE 9]>
@@ -54,7 +60,10 @@
 		</div>
 	</div>
 </nav>
-{% block content %}
-{% endblock %}
+
+<div class="container">
+	{% block content %}
+	{% endblock %}
+</div>
 </body>
 </html>
