@@ -1,5 +1,14 @@
 {% extends "SonataAdminBundle::standard_layout.html.twig" %}
 
+{% block stylesheets %}
+	{{ parent() }}
+
+	{% stylesheets
+	'bundles/bungacore/css/admin.css' filter='cssrewrite' %}
+	<link rel="stylesheet" href="{{ asset_url }}"/>
+	{% endstylesheets %}
+{% endblock %}
+
 {% block footer %}
 	<div class="row-fluid">
 		<div class="span2 offset10 pull-right">
