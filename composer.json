@@ -1,8 +1,8 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "gusdecool/bunga-symfony",
     "license": "MIT",
     "type": "project",
-    "description": "The \"Symfony Standard Edition\" distribution",
+    "description": "Pre defined Symfony Framework by Bunga Mata",
     "autoload": {
         "psr-0": { "": "src/" }
     },
